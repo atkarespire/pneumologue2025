@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas et le Pneumologue</title>
+    <title>Atka et le Pneumologue</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,10 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-image: url('atkanibar.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             text-align: center;
             padding: 20px;
         }
@@ -42,7 +45,7 @@
     </style>
 </head>
 <body>
-    <h1>Est-ce que Thomas a pris rendez-vous chez un pneumologue ?</h1>
+    <h1>Est-ce que Atka a pris rendez-vous chez un pneumologue ?</h1>
     <div class="non">NON</div>
     <div class="retard">Il est en retard de :</div>
     <div id="jours"></div>
@@ -56,7 +59,7 @@
             document.getElementById('jours').textContent = diffDays + ' jours';
         }
         updateDays();
-        setInterval(updateDays, 1000 * 60 * 60); 
+        setInterval(updateDays, 1000 * 60 * 60); // Update every hour
     </script>
 </body>
 </html>
